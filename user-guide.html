@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide – UroDiary: Urine Tracker | BillionCraft Lab</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.65; max-width: 820px; margin: 40px auto; padding: 0 20px; color: #1f2937; background-color: #ffffff; }
+    h1, h2, h3 { color: #111827; }
+    h1 { border-bottom: 1px solid #e5e7eb; padding-bottom: 12px; font-size: 1.9rem; }
+    h2 { margin-top: 32px; font-size: 1.3rem; border-bottom: 1px solid #f3f4f6; padding-bottom: 6px; }
+    h3 { margin-top: 20px; font-size: 1.08rem; }
+    .meta { color: #6b7280; font-size: 0.95rem; }
+    .nav { margin-bottom: 24px; font-size: 0.95rem; }
+    .nav a { color: #2563eb; text-decoration: none; }
+    .nav a:hover { text-decoration: underline; }
+    ol, ul { padding-left: 22px; }
+    li { margin-bottom: 8px; }
+    .note { background: #f9fafb; border-left: 4px solid #3B71DE; padding: 14px 16px; border-radius: 6px; margin-top: 28px; color: #374151; }
+    footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid #e5e7eb; font-size: 0.9rem; color: #6b7280; }
+  </style>
+</head>
+<body>
+  <div class="nav"><a href="https://billioncraftlab.github.io/">← Back to BillionCraft Lab</a></div>
+  <h1>UroDiary: Urine Tracker — User Guide</h1>
+  <p class="meta"><strong>App:</strong> UroDiary: Urine Tracker (v1.0.0+1)  |  <strong>Developer:</strong> BillionCraft Lab  |  <strong>Updated:</strong> November 26, 2026</p>
+
+  <p><strong>UroDiary</strong> is an offline-first mobile application for tracking fluid intake, urine output, and daily habits with zero sign-up screens or external servers. All records are stored locally on your device in encrypted storage unless you explicitly export a report or run an encrypted backup.</p>
+
+  <h2>1. Top Bar, Navigation & Profile Switching</h2>
+  <ol>
+    <li><strong>4-Tab Bottom Navigation:</strong> Switch anytime between <strong>Log</strong>, <strong>Records</strong>, <strong>Trends</strong>, and <strong>Doctor</strong>. The bottom navigation bar stays accessible across the main tabs and throughout <strong>Settings</strong>.</li>
+    <li><strong>Settings Access:</strong> Tap the <strong>Settings</strong> gear icon on the top-left of the app bar to open preferences, profile details, reminders, and backup tools.</li>
+    <li><strong>Quick Profile Switcher:</strong> Tap the profile pill on the top-right (showing <strong>Self</strong> or <strong>Spouse</strong>, or your saved first name once customized) to switch active profiles immediately.</li>
+  </ol>
+
+  <h2>2. Logging Entries (Log Tab)</h2>
+  <p>The <strong>Log</strong> tab displays live <strong>Voided</strong> and <strong>Intake</strong> daily totals at the top for your active clinical tracking day (calculated using your configured <strong>Day Start Time</strong> and displayed in <strong>mL</strong> or <strong>oz</strong>).</p>
+
+  <h3>Step-by-Step Logging</h3>
+  <ol>
+    <li><strong>Select Entry Type:</strong> Toggle between <strong>Void</strong> and <strong>Intake</strong> inside the main card.</li>
+    <li><strong>Set Date & Time:</strong> The date/time box tracks the current device date and time automatically (in <code>12h</code> or <code>24h</code> format), and shows <strong>Last void</strong> or <strong>Last intake</strong> above it (with an <strong>(i)</strong> info icon). Tap the date/time box to open the <strong>3D cylindrical wheel selector</strong> (Date, Hour, Minute, and AM/PM in 12-hour mode), then tap <strong>Today / Now</strong> to sync or <strong>Done</strong> to confirm.</li>
+    <li><strong>Adjust Volume:</strong> Use the <strong>−</strong> and <strong>+</strong> steppers (which step by your configured output or intake increment), tap the volume field directly to type a value (<code>1..3000 mL</code> or equivalent <code>oz</code>), or tap a quick preset chip (your default container preset, two secondary presets, or <strong>Custom</strong>).</li>
+    <li><strong>Add Void Details (When in Void Mode):</strong>
+      <ul>
+        <li>Toggle <strong>Unmeasured Void</strong> (<em>Log bathroom visit without volume</em>) if you are recording a visit without a measured volume—this sets volume to <code>0 mL</code>, disables volume controls/presets.</li>
+        <li>Expand <strong>Optional Details</strong> (<strong>More</strong> / <strong>Less</strong>) to choose <strong>Urgency</strong> (<em>None</em>, <em>Mild</em>, <em>Moderate</em>, <em>Urgent</em>), pick one of 6 <strong>Urine Color</strong> swatches (<em>Clear</em>, <em>Pale</em>, <em>Straw</em>, <em>Yellow</em>, <em>Dark</em>, <em>Brown</em>), and select symptoms/conditions (<em>After sleep</em>, <em>Foamy urine</em>, <em>Leakage</em>, plus <em>Catheter</em> if enabled in Settings).</li>
+      </ul>
+    </li>
+    <li><strong>Add Intake Details (When in Intake Mode):</strong> Choose the <strong>Beverage</strong> (<em>Water</em>, <em>Coffee</em>, <em>Tea</em>, <em>Juice</em>, <em>Alcohol</em>, <em>Other</em>) and set <strong>Bladder Impact</strong> (<em>Smooth</em> or <em>Bladder irritant</em>; <em>Coffee</em> and <em>Alcohol</em> automatically suggest <em>Bladder irritant</em>).</li>
+    <li><strong>Add a Note & Save:</strong> Tap <strong>+ Add Note</strong> to type a note and tap <strong>Done</strong>, then tap <strong>Save Log</strong> at the bottom to save the entry locally.</li>
+  </ol>
+
+  <h2>3. Viewing & Managing History (Records Tab)</h2>
+  <ol>
+    <li><strong>Browse by Date:</strong> Use the 7-day strip (aligned to your chosen <strong>Week Start Day</strong>, <em>Sunday</em> or <em>Monday</em>, showing per-day <strong>In</strong> and <strong>Out</strong> totals) or tap <strong>Full Month</strong> to open the floating month calendar overlay.</li>
+    <li><strong>Check Daily Balance:</strong> Review your target or limit progress bar alongside <strong>Water In</strong>, <strong>Urine Out</strong>, and <strong>In - Out</strong>.</li>
+    <li><strong>Filter, Edit, or Delete Logs:</strong> Filter the day's list using <strong>All</strong>, <strong>Void</strong>, or <strong>Intake</strong>. Tap the edit (pencil) icon on an entry to update its volume or timestamp, or tap the delete (trash) icon to remove it after confirmation.</li>
+    <li><strong>Clear a Day or Date Range:</strong> Tap <strong>Clear / Range</strong> to open <strong>Manage Saved Records</strong>, where you can choose <strong>Clear Selected Day</strong> or <strong>Delete Date Range</strong> (using a week-aware date picker aligned to your clinical day boundary).</li>
+  </ol>
+
+  <h2>4. Tracking Trends & Adherence (Trends Tab)</h2>
+  <ol>
+    <li><strong>Choose a Timeframe:</strong> Select <strong>7 Days</strong>, <strong>14 Days</strong> (default), <strong>30 Days</strong>, or <strong>Custom</strong> (pick <strong>From Date</strong> and <strong>To Date</strong> and tap <strong>Apply</strong>).</li>
+    <li><strong>Review Adherence & Paired Chart:</strong> Check the adherence banner for compliant clinical days against your target or limit, and tap columns on the <strong>In vs. Out</strong> capsule bar chart to inspect period averages.</li>
+    <li><strong>Read Clinical Summary Metrics:</strong> Scroll through the 9 summary metrics: <em>Avg Daily Water Intake</em>, <em>Avg Daily Urine Out</em>, <em>Peak Void Volume</em>, <em>After-Sleep Void</em>, <em>Avg Interval</em>, <em>Avg after sleep void</em>, <em>Total unmeasured voids recorded</em>, <em>Avg Urgency reported</em>, and <em>Avg Leakage reported</em>.</li>
+  </ol>
+
+  <h2>5. Preparing & Exporting Doctor Reports (Doctor Tab)</h2>
+  <ol>
+    <li><strong>Select Reporting Window:</strong> Choose <strong>24hour</strong>, <strong>7 Days</strong> (default), <strong>30Days</strong>, or <strong>Custom</strong>.</li>
+    <li><strong>Update Patient Details & Visit Note:</strong> Review your profile name, DOB, and auto-calculated age, and enter any <strong>Medications / Visit Note</strong>.</li>
+    <li><strong>Copy or Export:</strong> Tap <strong>Copy Plain Text Summary</strong> to copy a clinical overview (including <em>Urgency & Leaks</em>, <em>Foamy Urine</em>, <em>Catheter Void</em>, and <em>Unmeasured Void</em>), or use <strong>PDF Export</strong>, <strong>Share PDF</strong>, or <strong>CSV Export</strong> to generate a report.</li>
+  </ol>
+
+  <h2>6. Settings, Reminders, Backups & Plus</h2>
+  <ul>
+    <li><strong>Profiles & Daily Targets:</strong> Switch active profiles (<strong>Self</strong> / <strong>Spouse</strong>), edit First Name, Last Name, and DOB under <strong>Profile Details</strong>, and configure <strong>Limit (Heart/Kidney)</strong> or <strong>Target (Hydration)</strong> under <strong>Daily Fluid Target / Limit</strong>.</li>
+    <li><strong>Containers & Formats:</strong> Customize container names, default volumes, and <code>+/−</code> steps in <strong>Default Containers & Step</strong>. In <strong>Default Formats</strong>, set <strong>Volume Unit</strong> (<code>mL</code> or <code>oz</code>), <strong>Time Format</strong> (<code>12h</code> or <code>24h</code>), <strong>Day Start Time</strong> (default <code>00:00</code>), <strong>Week Start Day</strong> (<em>Sunday</em> or <em>Monday</em>), and <strong>Log Display Order</strong> (<em>Old to New (Ascending)</em> or <em>New to Old (Descending)</em>).</li>
+    <li><strong>Reminders & Display:</strong> Configure <strong>Stop Drinking After</strong> (off by default; default <code>20:00</code>) with the 3D wheel and <strong>Send Test Notification</strong>, toggle <strong>Display Catheter on Log</strong>, and switch <strong>Dark Mode</strong> on or off.</li>
+    <li><strong>Local & Google Drive Backup:</strong> Use <strong>Local Drive Backup</strong> to export or restore an encrypted <code>.json</code> backup file, or open <strong>Google Drive Backup</strong> to sign in with your Google account and manage backups (<strong>Create Backup</strong>, <strong>Restore Backup</strong>, <strong>Delete Backup</strong>) in UroDiary's private Google Drive app-data folder (<code>drive.appdata</code>). You can also use <strong>Clear Data</strong> to wipe the active profile's logs after confirmation.</li>
+    <li><strong>Privacy, App Info & Plus:</strong> Configure <strong>Analytics</strong>, <strong>Crash Report</strong>, and <strong>Personalized Ads</strong> (all enabled by default and linked to an anonymous user ID) under <strong>Settings > Privacy and Data</strong>, open <strong>Privacy Policy</strong>, <strong>Terms of Use</strong>, or <strong>User Guide</strong> under <strong>Settings > App Information</strong>, upgrade via <strong>UroDiary Plus — Lifetime</strong>, or use <strong>Review on Play Store</strong> and <strong>Share with Your Friends</strong>.</li>
+  </ul>
+
+  <div class="note">
+    <strong>Wellness Disclaimer:</strong> UroDiary is a personal habit-logging and self-tracking utility for general informational purposes. It is not a medical device and does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare professional regarding any health concerns.
+  </div>
+
+  <footer>
+    © 2026 BillionCraft Lab. All rights reserved.
+  </footer>
+</body>
+</html>
